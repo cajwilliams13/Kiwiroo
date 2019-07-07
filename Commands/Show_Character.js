@@ -19,7 +19,28 @@ module.exports ={
             fs.readFile(`./Characters/${name}/altamount.txt`, function(err, m) {
             fs.readFile(`./Characters/${name}/altcool.txt`, function(err, n) {
             fs.readFile(`./Characters/${name}/alttype.txt`, function(err, o) {    
-            fs.readFile(`./Characters/${name}/alteffect.txt`, function(err, p) {      
+            fs.readFile(`./Characters/${name}/alteffect.txt`, function(err, p) {
+            fs.readFile(`./Characters/${name}/fname.txt`, function(err, q) {
+            fs.readFile(`./Characters/${name}/fdesc.txt`, function(err, r) {
+            fs.readFile(`./Characters/${name}/fdps.txt`, function(err, s) {
+            fs.readFile(`./Characters/${name}/famount.txt`, function(err, t) {
+            fs.readFile(`./Characters/${name}/fcool.txt`, function(err, u) {
+            fs.readFile(`./Characters/${name}/ftype.txt`, function(err, v) {    
+            fs.readFile(`./Characters/${name}/feffect.txt`, function(err, w) {
+            fs.readFile(`./Characters/${name}/fname.txt`, function(err, x) {
+            fs.readFile(`./Characters/${name}/fdesc.txt`, function(err, y) {
+            fs.readFile(`./Characters/${name}/fdps.txt`, function(err, z) {
+            fs.readFile(`./Characters/${name}/famount.txt`, function(err, aa) {
+            fs.readFile(`./Characters/${name}/fcool.txt`, function(err, bb) {
+            fs.readFile(`./Characters/${name}/ftype.txt`, function(err, cc) {    
+            fs.readFile(`./Characters/${name}/feffect.txt`, function(err, dd) {     
+            fs.readFile(`./Characters/${name}/ultname.txt`, function(err, ee) {
+            fs.readFile(`./Characters/${name}/ulttype.txt`, function(err, ff) {    
+            fs.readFile(`./Characters/${name}/ulteffect.txt`, function(err, gg) {
+            fs.readFile(`./Characters/${name}/ultdesc.txt`, function(err, hh) {
+            fs.readFile(`./Characters/${name}/image.txt`, function(err, ii) {
+            fs.readFile(`./Characters/${name}/thumbnail.txt`, function(err, jj) {       
+                
                 const bio = a.toString();
                 const user = b.toString();
                 const owner = c.toString();
@@ -36,6 +57,26 @@ module.exports ={
                 const altcool = n.toString();
                 const alttype = o.toString();
                 const alteffect = p.toString();
+                const fname = q.toString();
+                const fdesc = r.toString();
+                const fdps = s.toString();
+                const famount = t.toString();
+                const fcool = u.toString();
+                const ftype = v.toString();
+                const feffect = w.toString();
+                const qname = x.toString();
+                const qdesc = y.toString();
+                const qdps = z.toString();
+                const qamount = aa.toString();
+                const qcool = bb.toString();
+                const qtype = cc.toString();
+                const qeffect = dd.toString();
+                const ultname = ee.toString();
+                const ulttype = ff.toString();
+                const ulteffect = gg.toString();
+                const ultdesc = hh.toString();
+                const image = ii.toString();
+                const thumbnail = jj.toString();
 
         Character = {
             color: 0x0099ff,
@@ -48,7 +89,7 @@ module.exports ={
             Owner: ${owner}
             Current User: ${user}`,
             thumbnail: {
-                url: 'https://cdn.discordapp.com/attachments/581747601418879003/583924210070716418/csm_2338_d979c3e8cb.png',
+                url: `${thumbnail}`,
             },
             fields: [
                 {
@@ -87,33 +128,43 @@ module.exports ={
                 {
                     name: 'Ability 1:',
                     value: `
-                    Name: [Ability name]
-                    Type: [Type of move]
-                    Effect: [Ability effect (damage, heaing etc)]
-                    Cooldown: [Ability Cooldown]`,
+                    Name: ${fname}
+                    Description: ${fdesc}
+                    Details:
+                    - Type: ${ftype}
+                    - Cooldown: ${fcool}
+                    - Damage: ${fdps}
+                    - Amount: ${famount}
+                    - Effect: ${feffect}`,
                     inline: true,
                 },
                 {
                     name: 'Ability 2:',
                     value: `
-                    Name: [Ability name]
-                    Type: [Type of move]
-                    Effect: [Ability effect (damage, heaing etc)]
-                    Cooldown: [Ability Cooldown]`,
+                    Name: ${qname}
+                    Description: ${qdesc}
+                    Details:
+                    - Type: ${qtype}
+                    - Cooldown: ${qcool}
+                    - Damage: ${qdps}
+                    - Amount: ${qamount}
+                    - Effect: ${qeffect}`,
                     inline: true,
                 },
                 {
                     name: 'Ultimate:',
                     value: `
-                    Name: [Ultimate name]
-                    Type: [Type of move]
-                    Effect: [Ultimate effect (damage, heaing etc)]
-                    Cooldown: 15 turns (standard for all ultimates unless we change charge rates)`,
+                    Name: ${ultname}
+                    Description: ${ultdesc}
+                    Details:
+                    - Type: ${ulttype}
+                    - Effect: ${ulteffect}
+                    - Cooldown: 15 turns`,
                     inline: true,
                 },
             ],
             image: {
-                url: 'https://cdn.discordapp.com/attachments/581747601418879003/583927963104575488/Maeve.png',
+                url: `${image}`,
             },
             timestamp: new Date(),
             footer: {
@@ -122,6 +173,26 @@ module.exports ={
             },
         };
         message.channel.send({ embed: Character });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
+    });
     });
     });
     });
