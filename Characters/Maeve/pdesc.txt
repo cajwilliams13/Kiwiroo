@@ -1,0 +1,1 @@
+Throw two Daggers every second that each deal 400 Damage.
