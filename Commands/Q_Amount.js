@@ -1,7 +1,7 @@
 const fs = require('fs');
 module.exports = {
     name: "ability2amount",
-    aliases: "1amount, abi2amount",
+    aliases: "qamount, abi2amount",
     execute(message, args) {
         var name = args[0]
         message.channel.send(`Please state the amount of shots/charges your 2nd Ability [Q] has`)
