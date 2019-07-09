@@ -1,0 +1,1 @@
+Enemies within 300ft have their vision restricted to a 30-foot radius for 4 seconds.

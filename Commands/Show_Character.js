@@ -27,13 +27,13 @@ module.exports ={
             fs.readFile(`./Characters/${name}/fcool.txt`, function(err, u) {
             fs.readFile(`./Characters/${name}/ftype.txt`, function(err, v) {    
             fs.readFile(`./Characters/${name}/feffect.txt`, function(err, w) {
-            fs.readFile(`./Characters/${name}/fname.txt`, function(err, x) {
-            fs.readFile(`./Characters/${name}/fdesc.txt`, function(err, y) {
-            fs.readFile(`./Characters/${name}/fdps.txt`, function(err, z) {
-            fs.readFile(`./Characters/${name}/famount.txt`, function(err, aa) {
-            fs.readFile(`./Characters/${name}/fcool.txt`, function(err, bb) {
-            fs.readFile(`./Characters/${name}/ftype.txt`, function(err, cc) {    
-            fs.readFile(`./Characters/${name}/feffect.txt`, function(err, dd) {     
+            fs.readFile(`./Characters/${name}/qname.txt`, function(err, x) {
+            fs.readFile(`./Characters/${name}/qdesc.txt`, function(err, y) {
+            fs.readFile(`./Characters/${name}/qdps.txt`, function(err, z) {
+            fs.readFile(`./Characters/${name}/qamount.txt`, function(err, aa) {
+            fs.readFile(`./Characters/${name}/qcool.txt`, function(err, bb) {
+            fs.readFile(`./Characters/${name}/qtype.txt`, function(err, cc) {    
+            fs.readFile(`./Characters/${name}/qeffect.txt`, function(err, dd) {     
             fs.readFile(`./Characters/${name}/ultname.txt`, function(err, ee) {
             fs.readFile(`./Characters/${name}/ulttype.txt`, function(err, ff) {    
             fs.readFile(`./Characters/${name}/ulteffect.txt`, function(err, gg) {
