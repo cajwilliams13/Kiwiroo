@@ -39,7 +39,8 @@ module.exports ={
             fs.readFile(`./Characters/${name}/ulteffect.txt`, function(err, gg) {
             fs.readFile(`./Characters/${name}/ultdesc.txt`, function(err, hh) {
             fs.readFile(`./Characters/${name}/image.txt`, function(err, ii) {
-            fs.readFile(`./Characters/${name}/thumbnail.txt`, function(err, jj) {       
+            fs.readFile(`./Characters/${name}/thumbnail.txt`, function(err, jj) {    
+            fs.readFile(`./Characters/${name}/name.txt`, function(err, kk) {          
                 
                 const bio = a.toString();
                 const user = b.toString();
@@ -77,12 +78,13 @@ module.exports ={
                 const ultdesc = hh.toString();
                 const image = ii.toString();
                 const thumbnail = jj.toString();
+                const fullname = kk.toString();
 
         Character = {
             color: 0x0099ff,
             title: 'In use by:',
             author: {
-                name: `${name}`,
+                name: `${fullname}`,
                 icon_url: 'https://cdn.discordapp.com/attachments/581747601418879003/583928183791812608/KiwiRoo.jpg',
             },
             description: `
@@ -173,6 +175,7 @@ module.exports ={
             },
         };
         message.channel.send({ embed: Character });
+    });
     });
     });
     });
