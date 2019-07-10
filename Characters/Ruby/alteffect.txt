@@ -1,1 +1,1 @@
-N/A
+Burn on hit that deals 200 damage a turn for 3 turns.

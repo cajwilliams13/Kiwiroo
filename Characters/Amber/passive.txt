@@ -1,1 +1,1 @@
-N/A
+Every time your ult is off cooldown you become overheated, this grants you a 20% cooldown decrease on all abilities
