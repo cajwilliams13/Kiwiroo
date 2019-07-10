@@ -40,7 +40,8 @@ module.exports ={
             fs.readFile(`./Characters/${name}/ultdesc.txt`, function(err, hh) {
             fs.readFile(`./Characters/${name}/image.txt`, function(err, ii) {
             fs.readFile(`./Characters/${name}/thumbnail.txt`, function(err, jj) {    
-            fs.readFile(`./Characters/${name}/name.txt`, function(err, kk) {          
+            fs.readFile(`./Characters/${name}/name.txt`, function(err, kk) {
+            fs.readFile(`./Characters/${name}/passive.txt`, function(err, ll) {           
                 
                 const bio = a.toString();
                 const user = b.toString();
@@ -79,6 +80,7 @@ module.exports ={
                 const image = ii.toString();
                 const thumbnail = jj.toString();
                 const fullname = kk.toString();
+                const passive = ll.toString();
 
         Character = {
             color: 0x0099ff,
@@ -101,6 +103,10 @@ module.exports ={
                 {
                     name: '\u200b',
                     value: '\u200b',
+                },
+                {
+                    name: 'Passive:',
+                    value: passive,
                 },
                 {
                     name: 'Primary Fire:',
@@ -175,6 +181,7 @@ module.exports ={
             },
         };
         message.channel.send({ embed: Character });
+    });
     });
     });
     });
