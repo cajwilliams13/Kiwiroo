@@ -3,6 +3,7 @@ module.exports = {
     name: "create",
     description: "Create a character",
     execute(message) {
+            var owner = message.author
             message.channel.send(`Hello and welcome to the Kiwiroo character creation system.\nWhat is the name of your character? (1 word only. use ~name for multiple names)`)
         var filter = a => a.author.id === message.author.id
         var collector = message.channel.createMessageCollector(filter, {max: 1})
@@ -27,7 +28,7 @@ module.exports = {
                 fs.writeFile(`./Characters/${a}/ftype.txt`, "N/A", (err) => {
                 fs.writeFile(`./Characters/${a}/image.txt`, "https://cdn.discordapp.com/attachments/590329471857328188/598299083949604878/is-none-singular-or-plural-video-1753-06bba640fa47b87641138f8d2f0e600b1x.png", (err) => {
                 fs.writeFile(`./Characters/${a}/name.txt`, "N/A", (err) => {
-                fs.writeFile(`./Characters/${a}/owner.txt`, "N/A", (err) => {
+                fs.writeFile(`./Characters/${a}/owner.txt`, owner, (err) => {
                 fs.writeFile(`./Characters/${a}/pamount.txt`, "N/A", (err) => {
                 fs.writeFile(`./Characters/${a}/pcool.txt`, "N/A", (err) => {
                 fs.writeFile(`./Characters/${a}/pdesc.txt`, "N/A", (err) => {
@@ -48,6 +49,8 @@ module.exports = {
                 fs.writeFile(`./Characters/${a}/ulttype.txt`, "N/A", (err) => {
                 fs.writeFile(`./Characters/${a}/user.txt`, "N/A", (err) => {
                 fs.writeFile(`./Characters/${a}/passive.txt`, "N/A", (err) => {
+                fs.writeFile(`./Characters/${a}/hp.txt`, "N/A", (err) => {
+                });
                 });
                 });                                              
                 });

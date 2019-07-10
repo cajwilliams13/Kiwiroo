@@ -41,7 +41,8 @@ module.exports ={
             fs.readFile(`./Characters/${name}/image.txt`, function(err, ii) {
             fs.readFile(`./Characters/${name}/thumbnail.txt`, function(err, jj) {    
             fs.readFile(`./Characters/${name}/name.txt`, function(err, kk) {
-            fs.readFile(`./Characters/${name}/passive.txt`, function(err, ll) {           
+            fs.readFile(`./Characters/${name}/passive.txt`, function(err, ll) {
+            fs.readFile(`./Characters/${name}/hp.txt`, function(err, mm) {            
                 
                 const bio = a.toString();
                 const user = b.toString();
@@ -81,6 +82,7 @@ module.exports ={
                 const thumbnail = jj.toString();
                 const fullname = kk.toString();
                 const passive = ll.toString();
+                const hp = mm.toString();
 
         Character = {
             color: 0x0099ff,
@@ -107,6 +109,10 @@ module.exports ={
                 {
                     name: 'Passive:',
                     value: passive,
+                },
+                {
+                    name: 'Health:',
+                    value: hp,
                 },
                 {
                     name: 'Primary Fire:',
@@ -218,6 +224,7 @@ module.exports ={
     });
     });
     });
-    });     
+    });
+        });     
     }
 }
