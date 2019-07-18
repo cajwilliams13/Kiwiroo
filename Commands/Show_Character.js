@@ -83,6 +83,7 @@ module.exports ={
                 const fullname = kk.toString();
                 const passive = ll.toString();
                 const hp = mm.toString();
+                const ptotal = pamount*pdps;
 
         Character = {
             color: 0x0099ff,
@@ -123,7 +124,8 @@ module.exports ={
                     - Type: ${ptype}
                     - Cooldown: ${pcool}
                     - Damage: ${pdps}
-                    - Amount: ${pamount}`,
+                    - Amount: ${pamount}
+                    - Total Damage: ${ptotal}`,
                     inline: true,
                 },
                 {
@@ -225,6 +227,6 @@ module.exports ={
     });
     });
     });
-        });     
+    });     
     }
 }

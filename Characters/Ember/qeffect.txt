@@ -1,0 +1,1 @@
+Slows enemy hit, -2 defense rolls on the next roll.

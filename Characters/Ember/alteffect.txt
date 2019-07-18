@@ -1,0 +1,1 @@
+Protects Ember from up to 1000 damage. Cooldown starts when the shield breaks or she throws the shield.

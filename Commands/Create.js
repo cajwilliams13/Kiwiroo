@@ -5,7 +5,7 @@ module.exports = {
     execute(message) {
             var owner = message.author
             message.channel.send(`Hello and welcome to the Kiwiroo character creation system.\nWhat is the name of your character? (1 word only. use ~name for multiple names)`)
-        var filter = a => a.author.id === message.author.id
+        var filter = a => a.author.id === owner.id
         var collector = message.channel.createMessageCollector(filter, {max: 1})
         collector.on('collect', a => {
             fs.mkdir(`./Characters/${a}`, { recursive: true }, (err) => {

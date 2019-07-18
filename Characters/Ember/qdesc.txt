@@ -1,0 +1,1 @@
+Ember changes her gravity's direction and freezes her feet, kicking the first enemy she hits.
