@@ -1,0 +1,1 @@
+Release an infallible surge of judgement, destroying shields and executing targets at or below 65% Health. Targets above 65% Health will take 600 damage.

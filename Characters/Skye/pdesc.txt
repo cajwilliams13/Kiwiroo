@@ -1,0 +1,1 @@
+A wrist-mounted energy crossbow that deals 130 damage per shot every .1 seconds. Effective at Short Range

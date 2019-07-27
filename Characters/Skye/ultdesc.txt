@@ -1,0 +1,1 @@
+Throw a bomb that deals 3000 damage and destroys all shields

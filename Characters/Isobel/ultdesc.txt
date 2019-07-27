@@ -1,0 +1,1 @@
+Gives all nearby allies 30% damage reduction for one round, but reduces Isobel’s damage tolerance by 20%.

@@ -1,0 +1,1 @@
+When activated, silences all nearby enemies within a 50ft radius for one round.

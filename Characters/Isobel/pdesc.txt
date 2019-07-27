@@ -1,0 +1,1 @@
+Fires small magical orbs, dealing 240 damage every shot, with 3 shots per round.

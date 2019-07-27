@@ -1,0 +1,1 @@
+You have a Retribution target that becomes visible through walls when nearby. Killing your target grants additional Credits if they are on a killstreak. Activating Retribution randomly selects a new target.

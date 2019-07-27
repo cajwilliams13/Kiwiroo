@@ -1,0 +1,1 @@
+Fires 3 bolts in succession, each dealing 10% maximum Health damage over 4s.

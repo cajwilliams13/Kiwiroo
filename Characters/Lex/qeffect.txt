@@ -1,0 +1,1 @@
+When Retribution target is within line of sight or is revealed, it is marked with a golden crescent.

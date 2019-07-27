@@ -1,0 +1,1 @@
+Becomes untouchable for 1 round and moves twice as fast. Restores 20% HP over time.

@@ -1,0 +1,1 @@
+Fires an unstable crystal that explodes upon impact, damaging all enemies within the area

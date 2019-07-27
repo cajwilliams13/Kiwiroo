@@ -1,0 +1,1 @@
+Enter stealthfor 7.5 seconds. Getting too close to enemy players will reveal you while in stealth.

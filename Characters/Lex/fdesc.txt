@@ -1,0 +1,1 @@
+Activate to quickly slide forward in the direction you are facing, retaining the ability to fire your weapons.

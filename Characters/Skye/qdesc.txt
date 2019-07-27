@@ -1,0 +1,1 @@
+Create a smoke cloud that lasts 5s. Grants a 3s stealthevery 1s
