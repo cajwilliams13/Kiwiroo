@@ -1,0 +1,1 @@
+700 shield health for a round. 20% of received damage heals Bob.

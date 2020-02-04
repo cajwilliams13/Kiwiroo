@@ -49,7 +49,7 @@ module.exports = {
                 fs.readFile(`./Characters/${name}/name.txt`, function(err, kk) {
                 fs.readFile(`./Characters/${name}/passive.txt`, function(err, ll) {
                 fs.readFile(`./Characters/${name}/hp.txt`, function(err, mm) {            
-                    
+                fs.readFile(`./Characters/${name}/status.txt`, function(err, nn) {   
                     const bio = a.toString();
                     const user = b.toString();
                     const owner = c.toString();
@@ -90,6 +90,7 @@ module.exports = {
                     const passive = ll.toString();
                     const hp = mm.toString();
                     const ptotal = pamount*pdps;
+                    const status = nn.toString();
     
             Character = {
                 color: 0x0099ff,
@@ -100,7 +101,8 @@ module.exports = {
                 },
                 description: `
                 Owner: ${owner}
-                Current User: ${user}`,
+                Current User: ${user}
+                Status: ${status}`,
                 thumbnail: {
                     url: `${thumbnail}`,
                 },
@@ -197,6 +199,7 @@ module.exports = {
            message.client.channels.get("604611376262021120").send({ embed: Character }).then(sentEmbed => {
             sentEmbed.react("👍")
             sentEmbed.react("👎")
+        });
         });
         });
         });

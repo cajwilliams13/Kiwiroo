@@ -1,0 +1,1 @@
+Throws an orb that deals 200 damage in a small area of effect for 3 rounds. Goes on cooldown after the 3 rounds are over.

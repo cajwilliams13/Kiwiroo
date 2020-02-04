@@ -1,0 +1,1 @@
+Heal 900 health to an ally per turn. Restoring moonlight charge requires 1 turn of not using moonlight

@@ -14,10 +14,19 @@ for (const file of commandFiles) {
 }
 
 client.on('ready', () => {
-	console.log('Started!');
+	console.log("Ready!")
+	client.user.setPresence({
+        game: { 
+            name: 'Becoming Self Aware: A beginner\'s guide',
+            type: 'WATCHING',
+		},
+	});
 });
 
 client.on('message', message => {
+	if (message.content.toLowerCase().includes("uwu") && !message.author.bot) {
+		message.channel.send("OwO What's this?\nUwU!")
+	}
 	let prefix = botconfig.prefix;
 
 	if (!message.content.startsWith(prefix) || message.author.bot) return;

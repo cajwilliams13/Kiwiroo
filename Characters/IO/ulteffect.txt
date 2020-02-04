@@ -1,0 +1,1 @@
+All enemies hit will be stunned and take 800 when ult hits a wall

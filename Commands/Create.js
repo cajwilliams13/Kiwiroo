@@ -50,6 +50,8 @@ module.exports = {
                 fs.writeFile(`./Characters/${a}/user.txt`, "N/A", (err) => {
                 fs.writeFile(`./Characters/${a}/passive.txt`, "N/A", (err) => {
                 fs.writeFile(`./Characters/${a}/hp.txt`, "N/A", (err) => {
+                fs.writeFile(`./Characters/${a}/status.txt`, "Pending...", (err) => {
+                });     
                 });
                 });
                 });                                              

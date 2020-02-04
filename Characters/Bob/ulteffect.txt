@@ -1,0 +1,1 @@
+A blood sword that swings 5 times in a turn and deals 180 damage each swing. Taking damage will return the full damage to the attacker for a round.

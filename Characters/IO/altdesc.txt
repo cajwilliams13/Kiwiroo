@@ -1,0 +1,1 @@
+Hold and channel Moonlight into an ally, healing them for 150 every 0.15s. Moonlight regenerates when not in use.

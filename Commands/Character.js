@@ -7,11 +7,11 @@ module.exports ={
         var path = "./Characters" 
         fs.readdir(path, function(err, items) {
             var item = items.toString();
-            var arr = item.split(",");
+            var arr = item.split(`,`);
         if (name === "undefined") {
-            message.channel.send(`Please enter a name to display. The current names are ${items}`)
+            message.channel.send(`Please enter a name to display. The current names are ${arr}`)
         } else if (arr.includes(name)) {
-            fs.readFile(`./Characters/${name}/bio.txt`, function(err, a) {
+                fs.readFile(`./Characters/${name}/bio.txt`, function(err, a) {
                 fs.readFile(`./Characters/${name}/user.txt`, function(err, b) {
                 fs.readFile(`./Characters/${name}/owner.txt`, function(err, c) {
                 fs.readFile(`./Characters/${name}/pname.txt`, function(err, d) {
@@ -49,7 +49,8 @@ module.exports ={
                 fs.readFile(`./Characters/${name}/thumbnail.txt`, function(err, jj) {    
                 fs.readFile(`./Characters/${name}/name.txt`, function(err, kk) {
                 fs.readFile(`./Characters/${name}/passive.txt`, function(err, ll) {
-                fs.readFile(`./Characters/${name}/hp.txt`, function(err, mm) {            
+                fs.readFile(`./Characters/${name}/hp.txt`, function(err, mm) {
+                fs.readFile(`./Characters/${name}/status.txt`, function(err, nn) {            
                     
                     const bio = a.toString();
                     const user = b.toString();
@@ -91,6 +92,7 @@ module.exports ={
                     const passive = ll.toString();
                     const hp = mm.toString();
                     const ptotal = pamount*pdps;
+                    const status = nn.toString();
     
             Character = {
                 color: 0x0099ff,
@@ -101,7 +103,8 @@ module.exports ={
                 },
                 description: `
                 Owner: ${owner}
-                Current User: ${user}`,
+                Current User: ${user}
+                Status: ${status}`,
                 thumbnail: {
                     url: `${thumbnail}`,
                 },
@@ -235,9 +238,10 @@ module.exports ={
         });
         });
         });
+        });
         } else {
             message.channel.send(`Please enter a completed character's name. The current names are:\n${items}`)
-    }
+    };
     });         
-    }
+    },
 }

@@ -1,0 +1,1 @@
+Hit all enemies tagged by IO's primary fire causing a 1 turn stun. Luna has 4000 health.

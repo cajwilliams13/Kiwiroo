@@ -1,0 +1,1 @@
+Increase movement speed for a round (+2 defense rolls). If Aiden gets hit once, the movement speed bonus turns into a 30% damage reduction.

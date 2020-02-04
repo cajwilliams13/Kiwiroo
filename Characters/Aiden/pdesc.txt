@@ -1,0 +1,1 @@
+A crystal powered rifle that deals 300 per shot. It fires 2 shots per round. If the first shot hits, the second deals an extra 100 damage.

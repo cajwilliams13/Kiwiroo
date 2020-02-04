@@ -1,0 +1,1 @@
+Deals more damage the closer enemy's defense roll is to your attack roll. Deals maximum of 650 damage on 1 roll delta and a minimum of 470 on 19 roll delta.

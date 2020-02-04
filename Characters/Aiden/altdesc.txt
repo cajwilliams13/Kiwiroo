@@ -1,0 +1,1 @@
+Reload for a turn, and replace the regular clip with an incendiary clip. Each incendiary bullet deals 250 damage and burns enemies by 50 for 3 turns. Goes on cooldown after ammo runs out.

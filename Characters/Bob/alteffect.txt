@@ -1,0 +1,1 @@
+Bleeds enemy hit for 200 damage over 4 turns.

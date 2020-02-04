@@ -1,0 +1,1 @@
+Project an ethereal manifestation of Luna and send it forward. Enemies caught will be pulled along the travel path, and take 800 damage when it collides with a wall.
