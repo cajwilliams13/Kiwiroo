@@ -2,7 +2,7 @@ const fs = require('fs');
 module.exports = {
     name: "create",
     description: "Create a character",
-    execute(message) {
+    execute(message, args, db) {
             var owner = message.author
             message.channel.send(`Hello and welcome to the Kiwiroo character creation system.\nWhat is the name of your character? (1 word only. use ~name for multiple names)`)
         var filter = a => a.author.id === owner.id

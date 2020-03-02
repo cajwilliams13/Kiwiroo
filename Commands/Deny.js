@@ -1,7 +1,7 @@
 const fs = require('fs')
 module.exports = {
     name: "deny",
-    execute(message, args) {
+    execute(message, args, db) {
         var name = `${args[0]}`
         var path = "./Characters"
         fs.readFile(`./Characters/${name}/owner.txt`, function(err, c) {

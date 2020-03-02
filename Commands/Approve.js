@@ -1,7 +1,7 @@
 const fs = require('fs')
 module.exports = {
     name: "approve",
-    execute(message, args) {
+    execute(message, args, db) {
         var name = `${args[0]}`
         var path = "./Characters" 
         fs.readdir(path, function(err, items) {
