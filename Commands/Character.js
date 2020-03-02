@@ -26,8 +26,8 @@ module.exports ={
                         icon_url: 'https://cdn.discordapp.com/avatars/566151452762832906/5a058091cd4594d643d57318f6f1a043.png',
                     },
                     description: `
-                    Owner: ${info.Creator}
-                    Current User: ${info.User}`,
+                    Owner: <@${info.Creator}>
+                    Current User: <@${info.User}>`,
                     thumbnail: {
                         url: `${info.Thumbnail}`,
                     },
